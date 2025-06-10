@@ -1,0 +1,539 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    font-family: Arial, sans-serif;
+}
+
+.section1 {
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 60px 20px 20px 20px;
+}
+
+.dividentbar {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.dividentmain_head {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dividentmain_head_text {
+    height: 25px;
+    flex: none;
+}
+
+.dividentmain_head_text > h1 {
+    font-size: clamp(12px, 3.5vw, 15px);
+    color: white;
+    margin: 0;
+}
+
+.incom_box {
+    width: 50px;
+    height: 20px;
+    margin-left: 10px;
+    background-color: #0B7B9338;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.incom_box > label {
+    color: #0B7B93;
+    font-size: clamp(10px, 2.5vw, 12px);
+}
+
+.dividyn {
+    height: auto;
+    min-height: 42.84px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.dividyn_pic_head {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    min-width: 150px;
+}
+
+.dividyn_pic {
+    width: clamp(20px, 5vw, 27.45px);
+    height: clamp(20px, 5vw, 27.45px);
+    flex-shrink: 0;
+}
+
+.dividyn_pic > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dividyn_text {
+    height: auto;
+    padding-left: 3%;
+}
+
+.dividyn_text > h1 {
+    margin: 0;
+    font-size: clamp(14px, 4vw, 18px);
+    color: white;
+}
+
+.dividyn_price {
+    height: auto;
+    min-height: 36px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.price1,
+.price2 {
+    display: flex;
+    width: 50%;
+    height: 36px;
+    align-items: center;
+    border: 1.34px solid var(--Color-34, #0B7B93);
+    padding: 4px;
+}
+
+.price2 {
+    border-left: none;
+}
+
+.dividyn_price_img1 {
+    width: clamp(18px, 4vw, 23px);
+    height: clamp(18px, 4vw, 23px);
+    margin-left: 2%;
+    flex-shrink: 0;
+}
+
+.dividyn_price_img1 > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.usd_price1 {
+    font-size: clamp(12px, 3.5vw, 16px);
+    margin-left: 3%;
+    color: white;
+}
+
+.levels {
+    display: flex;
+    width: 100%;
+    height: auto;
+    min-height: 50px;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.indiactor {
+    width: 100%;
+    max-width: 380px;
+    height: 50px;
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+}
+
+.indiactors1,
+.indiactors {
+    width: 12px;
+    height: 100%;
+    background: linear-gradient(180.3deg, #0B7B93 -24.26%, #06CBF5 99.74%);
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.indiactors {
+    margin-left: 3px;
+}
+
+.indicatorslast {
+    flex: 1;
+    min-width: 80px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(11, 123, 147, 0.46) 0%, rgba(6, 203, 245, 0.46) 100%);
+    margin-left: 3px;
+}
+
+.limit {
+    margin-left: auto;
+    width: 65px;
+    height: 50px; /* Changed from 96% to match levels height */
+    min-height: 50px; /* Changed from 48px to match levels min-height */
+    background: #0B7B9375;
+    border: 1.8px solid #0B7B93;
+    flex-shrink: 0;
+}
+
+.limit_head {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    padding: 1px 2px;
+    flex-shrink: 0;
+}
+
+.limit_head_img {
+    height: clamp(14px, 3.5vw, 18px);
+    width: clamp(14px, 3.5vw, 18px);
+    flex-shrink: 0;
+}
+
+.limit_head_img > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.limit_head_text {
+    height: auto;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    min-width: 0;
+}
+
+.limit_head_text > h1 {
+    font-size: clamp(8px, 2vw, 10px);
+    margin: 0;
+    padding-left: 2px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.limit_price {
+    height: calc(100% - 22px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.limit_price > label {
+    font-size: clamp(10px, 3vw, 14px);
+    color: white;
+    text-align: center;
+}
+
+.section2 {
+    display: flex;
+    width: 100%;
+    max-width: 450px;
+    height: 38px;
+    margin-top: 15px;
+    margin-left: 5%;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
+.history,
+.cardmember {
+    height: 38px;
+    width: 140px;
+    text-align: center;
+    background: #0B7B9321;
+    flex-shrink: 0;
+}
+
+.history {
+    margin-left: 0;
+}
+
+.cardmember {
+    margin-left: 0;
+}
+
+.history > button,
+.cardmember > button {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: clamp(11px, 2.5vw, 14px);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.history > button:hover,
+.cardmember > button:hover {
+    background-color: #0B7B9350;
+}
+
+.section3 {
+    height: auto;
+    width: 100%;
+    max-width: 450px;
+    padding: 8px 0;
+    margin-top: 15px;
+    margin-left: 5%;
+    align-self: flex-start;
+}
+
+.section3 > h1 {
+    margin: 0;
+    padding-top: 8px;
+    font-size: clamp(14px, 3.5vw, 18px);
+    color: white;
+}
+
+.section4 {
+    width: 100%;
+    max-width: 450px;
+    margin-top: 15px;
+    margin-left: 5%;
+    height: auto;
+    align-self: flex-start;
+}
+
+.card {
+    width: 100%;
+    min-height: 100px;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+    .section1 {
+        padding: 40px 15px 20px 15px;
+    }
+    
+    .dividentmain_head {
+        height: auto;
+        min-height: 35px;
+        gap: 8px;
+        justify-content: flex-start;
+    }
+    
+    .incom_box {
+        margin-left: 10px;
+    }
+    
+    .dividyn {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+    
+    .dividyn_price {
+        position: static;
+        width: 100%;
+        max-width: none;
+        margin-top: 0;
+    }
+    
+    .levels {
+        flex-direction: row;
+        gap: 8px;
+        min-height: 45px; /* Adjusted for mobile */
+        align-items: stretch;
+    }
+    
+    .indiactor {
+        width: auto;
+        flex: 1;
+        min-width: 120px; /* Increased to accommodate all indicators */
+        height: 45px; /* Match mobile levels height */
+        display: flex;
+        overflow: hidden; /* Prevent horizontal scroll */
+    }
+    
+    .limit {
+        margin-left: 8px;
+        width: 80px;
+        max-width: 80px;
+        align-self: stretch;
+        height: 45px; /* Match mobile levels height */
+        min-height: 45px; /* Match mobile levels min-height */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section2 {
+        flex-direction: row;
+        height: 32px;
+        gap: 8px;
+        margin-left: 0;
+        align-self: center;
+        justify-content: center;
+    }
+    
+    .history,
+    .cardmember {
+        width: 110px;
+        height: 32px;
+        max-width: none;
+        margin-left: 0;
+    }
+    
+    .section3,
+    .section4 {
+        margin-left: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section1 {
+        padding: 25px 10px 20px 10px;
+    }
+    
+    .dividyn_pic_head {
+        min-width: auto;
+    }
+    
+    .price1,
+    .price2 {
+        padding: 3px;
+    }
+    
+    .indiactors1,
+    .indiactors {
+        width: 8px;
+        min-width: 6px;
+    }
+    
+    .indicatorslast {
+        min-width: 40px;
+        flex: 1;
+    }
+    
+    .levels {
+        min-height: 40px; /* Smaller for very small screens */
+        align-items: stretch;
+    }
+    
+    .indiactor {
+        height: 40px; /* Match small mobile levels height */
+        min-width: 100px; /* Reduced for very small screens but still show indicators */
+    }
+    
+    .indiactors1,
+    .indiactors {
+        width: 6px;
+        min-width: 4px;
+    }
+    
+    .indicatorslast {
+        min-width: 30px;
+        flex: 1;
+    }
+    
+    .limit {
+        height: 40px; /* Match small mobile levels height */
+        min-height: 40px; /* Match small mobile levels min-height */
+        width: 70px;
+        max-width: 70px;
+    }
+    
+    .limit_head_text > h1 {
+        font-size: clamp(7px, 1.8vw, 9px);
+    }
+    
+    .limit_price > label {
+        font-size: clamp(9px, 2.5vw, 12px);
+    }
+    
+    .section2 {
+        margin-left: 0;
+        align-self: center;
+        justify-content: center;
+        height: 30px;
+    }
+    
+    .history,
+    .cardmember {
+        width: 100px;
+        height: 30px;
+        max-width: none;
+    }
+    
+    .history > button,
+    .cardmember > button {
+        font-size: clamp(10px, 2vw, 12px);
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .section1 {
+        padding-top: 80px;
+    }
+    
+    .dividentbar {
+        max-width: 550px;
+    }
+    
+    .section2,
+    .section3,
+    .section4 {
+        max-width: 550px;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .dividyn {
+        flex-wrap: nowrap;
+    }
+    
+    .dividyn_price {
+        position: absolute;
+        right: 0;
+        margin-top: 0;
+        width: 200px;
+    }
+    
+    .section2 {
+        margin-left: 5%;
+        align-self: flex-start;
+    }
+    
+    .section3,
+    .section4 {
+        margin-left: 5%;
+        align-self: flex-start;
+    }
+}
