@@ -51,10 +51,11 @@ main {
 }
 
 .incom_box {
-    width: 50px;
+    width: 70px;
     height: 20px;
     margin-left: 10px;
-    background-color: #0B7B9338;
+    background: #2BC71638;
+
     align-items: center;
     text-align: center;
     display: flex;
@@ -63,7 +64,8 @@ main {
 }
 
 .incom_box > label {
-    color: #0B7B93;
+    color: #2BC716;
+
     font-size: clamp(10px, 2.5vw, 12px);
 }
 
@@ -125,8 +127,9 @@ main {
     width: 50%;
     height: 36px;
     align-items: center;
-    border: 1.34px solid var(--Color-34, #0B7B93);
-    background: #0B7B9321;
+    border: 1.34px solid #2BC716;
+    background: #2BC71621;
+
     padding: 4px;
 }
 
@@ -176,7 +179,8 @@ main {
 .indiactors {
     width: 12px;
     height: 100%;
-    background: linear-gradient(180.3deg, #0B7B93 -24.26%, #06CBF5 99.74%);
+    background: linear-gradient(180.3deg, #50B174 -24.26%, #2BC716 99.74%);
+
     margin: 0;
     flex-shrink: 0;
 }
@@ -198,8 +202,9 @@ main {
     width: 65px;
     height: 60px;
     min-height: 60px;
-    background: #0B7B9375;
-    border: 1.8px solid #0B7B93;
+    background: #2BC71675;
+
+    border: 1.8px solid #2BC716;
     flex-shrink: 0;
 }
 
@@ -276,6 +281,9 @@ main {
     width: 140px;
     text-align: center;
     background: #0B7B9321;
+
+    
+
     flex-shrink: 0;
 }
 

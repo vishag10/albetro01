@@ -27,7 +27,7 @@ function Page2() {
                                 <h1>Dividend income</h1>
                             </div>
                             <div className="incom_box">
-                                <label htmlFor="">pending</label>
+                                <label htmlFor="">completed</label>
                             </div>
                         </div>
                         <div className="dividyn">
@@ -67,7 +67,27 @@ function Page2() {
                                 <div className="indiactors"></div>
                                 <div className="indiactors"></div>
                                 <div className="indiactors"></div>
-                                <div className="indicatorslast"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                <div className="indiactors"></div>
+                                {/* <div className="indicatorslast"></div> */}
                             </div>
                             <div className="limit">
                                 <div className="limit_head">
@@ -156,7 +176,7 @@ function Page2() {
 
                                     {/* Third Section - Extra Bonus Text */}
                                     <div className="card_section3">
-                                        <p className="card_bonus_text">Weekly bonus</p>
+                                        <p className="card_bonus_text">Extra bonus</p>
                                     </div>
 
                                     {/* Fourth Section - Logo and Price */}
@@ -164,7 +184,7 @@ function Page2() {
                                         <div className="card_coin_img">
                                             <img src={coin2} alt="coin" />
                                         </div>
-                                        <p className="card_price">12.560</p>
+                                        <p className="card_price">9.890</p>
                                     </div>
                                 </div>
                             </div>
