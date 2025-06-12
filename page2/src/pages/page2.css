@@ -500,7 +500,9 @@ main {
         display: flex;
         overflow: hidden;
     }
-    
+    .indiactors,.indiactors1{
+        width: 2.2%;
+    }
     .limit {
         margin-left: 8px;
         width: 80px;
@@ -728,7 +730,15 @@ main {
         height: 16px;
     }
 }
+@media (min-width: 769px)and (max-width:1024px){
+    .levels{
+        
 
+    }
+    .indiactors,.indiactors1{
+        width: 2.2%;
+    }
+}
 /* Large Desktop Styles */
 @media (min-width: 1200px) {
     .section1 {
@@ -743,6 +753,8 @@ main {
     .section3 {
         max-width: 550px;
     }
+    
+    
     
     .section4 {
         width: 100%;
@@ -798,6 +810,9 @@ main {
     .section3 {
         margin-left: 5%;
         align-self: flex-start;
+    }
+    .indiactors,.indiactors1{
+        width: 2.2%;
     }
     
     .section4 {
