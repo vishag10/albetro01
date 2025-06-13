@@ -2,11 +2,12 @@ import React from 'react'
 import closeIcon from '../assets/x-square.png'
 import pic from '../assets/Frame (2).png'
 import token from '../assets/Group 1000004189.png'
+
 function PopUpBox() {
     return (
         <>
-            <div className="w-screen h-screen bg-gray-700 justify-center items-center flex fixed top-0 left-0 z-50">
-                <div className="w-[696px] h-[552px] bg-black  mx-auto border border-[0.5px] border-[#0B7B93]">
+            <div className="w-screen h-screen bg-gray-700 justify-center items-center flex fixed top-0 left-0 z-50 p-2 sm:p-0">
+                <div className="w-full max-w-[696px] h-auto bg-black mx-auto border border-[0.5px] border-[#0B7B93] sm:w-[696px] sm:h-[552px]">
 
                     {/* Header bar with close button */}
                     <div className="w-full h-[40px] bg-black flex items-center relative">
@@ -18,7 +19,7 @@ function PopUpBox() {
                     </div>
 
                     {/* Main content box */}
-                    <div className="w-[596px] h-[467px] mx-auto  mt-4">
+                    <div className="w-full px-4 pb-4 sm:w-[596px] sm:h-[467px] sm:mx-auto sm:px-0 sm:pb-0 sm:mt-4">
                         <div className="head w-full h-[35px] text-center mt-2 ">
                             <h1 className="font-bold text-[24px] text-white">Dividyn</h1>
                         </div>
@@ -26,7 +27,7 @@ function PopUpBox() {
                             <span className='text-white text-[13px] leading-[16px]' >Join the Dividyn and Watch Your Gains Grow <br />Maximize your returns by joining a Dividyn. Together ,we achieve more</span>
                         </div>
 
-                        <div className="price w-full h-[276px]  mt-2">
+                        <div className="price w-full h-auto sm:h-[276px] mt-2">
                             <div className="text-white text-[12px] ">Dollar Amount
                             </div>
                             <div className="relative">
